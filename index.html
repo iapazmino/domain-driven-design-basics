@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=1024, user-scalable=no">
 
-  <title>Your deck.js Presentation</title>
+  <title>Domain Driven Design - basics</title>
 
   <!-- Required stylesheet -->
   <link rel="stylesheet" media="screen" href="deck.js/core/deck.core.css">
@@ -18,7 +18,7 @@
   <link rel="stylesheet" media="screen" href="deck.js/extensions/scale/deck.scale.css">
 
   <!-- Style theme. More available in /themes/style/ or create your own. -->
-  <link rel="stylesheet" media="screen" href="deck.js/themes/style/web-2.0.css">
+  <link rel="stylesheet" media="screen" href="deck.js/themes/style/swiss.css">
 
   <!-- Transition theme. More available in /themes/transition/ or create your own. -->
   <link rel="stylesheet" media="screen" href="deck.js/themes/transition/horizontal-slide.css">
@@ -35,15 +35,79 @@
     <!-- Begin slides. Just make elements with a class of slide. -->
 
     <section class="slide">
-      <h1>Slide</h1>
+      <h1>Domain Driven Design - basics</h1>
     </section>
 
     <section class="slide">
-      <h1>Content</h1>
+      <h2>Agenda</h2>
+      <ul>
+        <li>
+          <h3>A common language</h3>
+          <p>The terms and relationships that reflect domain insight provide the semantics for a language precise enough for technical development.</p>
+        </li>
+        <li>
+          <h3>Meaningful code and relevant models</h3>
+          <p>Code should be an expression of the domain model so it supports the common language.</p>
+        </li>
+        <li>
+          <h3>Building blocks</h3>
+          <p>Layered architecture, entities, value objects and services.</p>
+        </li>
+      </ul>
     </section>
 
     <section class="slide">
-      <h1>Here</h1>
+      <h2>A common language</h2>
+      <ul>
+        <li>Domain jargon translated to technical dialects, and viceversa, blunts communication.</li>
+        <li>Use the same language in speech and writing.</li>
+        <li>Use the model as the backbone of a common language; a change to the language is a change to the model.</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>A common language</h2>
+      <img src="http://yuml.me/3719ae27" alt="Registration service">
+    </section>
+
+    <section class="slide">
+      <h2>Meaningful code and relevant models</h2>
+      <ul>
+        <li>Analysis produces a model which captures fundamental concepts from the domain.</li>
+        <li>Design especifies a set of programmable and deployable components.</li>
+        <li>When the code does not easily map to the model correctness of the software is suspect; analysis and design are divided.</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Meaningful code and relevant models</h2>
+      
+      <pre><code>
+        public class Customer {
+          private String forname;
+          private String surname;
+          
+          public String doSome() {
+            return "some string";
+          }
+      }
+      </code></pre>
+    </section>
+
+    <section class="slide">
+      <h2>Building blocks - Layered architecture</h2>
+    </section>
+
+    <section class="slide">
+      <h2>Building blocks - Entities</h2>
+    </section>
+
+    <section class="slide">
+      <h2>Building blocks - Value objects</h2>
+    </section>
+
+    <section class="slide">
+      <h2>Building blocks - Services</h2>
     </section>
 
     <!-- End slides. -->
